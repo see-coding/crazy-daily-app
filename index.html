@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Daily Facts 4U liefert tägliche Fakten, Feiertage, Zitate und Ereignisse in einem auffälligen Design.">
+    <meta name="keywords" content="Daily Facts, Fakten, Feiertage, Zitate, Ereignisse, Kalender, Wissen">
+    <meta name="author" content="Erniez28-SEEsg">
+    <meta name="robots" content="index, follow">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta name="theme-color" content="#0a0b16">
+    <meta name="msapplication-TileColor" content="#0a0b16">
+    <meta name="color-scheme" content="dark">
+    <meta name="application-name" content="Daily Facts 4U">
+    <meta name="apple-mobile-web-app-title" content="Daily Facts 4U">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta property="og:title" content="Daily Facts 4U">
+    <meta property="og:description" content="Tägliche Fakten, Feiertage und Zitate – schnell, stylish und sofort griffbereit.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="de_DE">
+    <meta property="og:image" content="assets/favicons/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Daily Facts 4U">
+    <meta name="twitter:description" content="Tägliche Fakten, Feiertage und Zitate – schnell, stylish und sofort griffbereit.">
+    <meta name="twitter:image" content="assets/favicons/og-image.png">
+    <title>Daily Facts 4U</title>
+    <link rel="icon" href="assets/favicons/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="assets/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="assets/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="apple-touch-icon" href="assets/favicons/apple-touch-icon.png" sizes="180x180">
+    <link rel="manifest" href="assets/favicons/site.webmanifest">
+    <link rel="mask-icon" href="assets/favicons/safari-pinned-tab.svg" color="#13ba84">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Menu Button -->
+        <button id="menu-toggle" class="menu-button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="slide-menu">Daily Facts 4U</button>
+
+        <!-- Overlay Menu -->
+        <nav id="slide-menu" class="overlay-menu" aria-hidden="true">
+            <div class="overlay-backdrop"></div>
+            <div class="overlay-panel">
+                <div class="menu-header">
+                    <span class="menu-title">Daily Facts 4U</span>
+                    <button id="menu-close" class="menu-close-button" aria-label="Menü schließen">✕</button>
+                </div>
+                <ul>
+                    <li><a href="#holiday" class="menu-item">Crazy Feiertage</a></li>
+                    <li><a href="#events" class="menu-item">Geschichtliche Ereignisse</a></li>
+                    <li><a href="#facts" class="menu-item">Fakten – Wissen</a></li>
+                    <li><a href="#favquotes" class="menu-item">Berühmte Zitate</a></li>
+                    <li><a href="#hackerquotes" class="menu-item">Hacker Quotes</a></li>
+                    <li><a href="#need2know" class="menu-item">NERDS | Unnützlich – Nützlich</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Main Content Area -->
+        <main class="content-area">
+            <div id="main-content" class="centered-text">Lade Inhalte...</div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="app-footer">
+            <div class="footer-left">
+                <a href="https://crazyprints.de" target="_blank" rel="noopener noreferrer"><i>CrazyPrints</i></a>
+                <span class="footer-separator">•</span>
+                <a href="https://pimmelshirt.de" target="_blank" rel="noopener noreferrer"><i>PimmelShirt</i></a>
+            </div>
+            <div class="footer-center">
+                <img src="assets/logo-dark.svg" alt="App Logo" id="footer-logo" class="footer-logo">
+            </div>
+            <div class="footer-right">
+                <a href="#" id="allmylinks-trigger">* AllMyLinks *</a>
+            </div>
+        </footer>
+
+        <!-- Modal for MP3 Download -->
+        <div id="mp3-modal" class="modal">
+            <div class="modal-content">
+                <span class="modal-close-button">&times;</span>
+                <h2>! Hidden Track !</h2>
+                <p>Du hast ihn gefunden, unseren größten Schatz!<br>Lade ihn runter, lass ihn auf Dauerschleife laufen und kauf Dir heute noch passend dazu<br><a href="https://pimmelshirt.de" title="PimmelShirt Online-Shop" target="_blank" rel="noopener noreferrer">Dein Pimmelshirt</a></p>
+                <a href="assets/pimmelshirt-song.mp3" download="pimmelshirt-song.mp3" class="download-button">MP3 herunterladen</a>
+            </div>
+        </div>
+
+        <!-- Modal for AllMyLinks -->
+        <div id="links-modal" class="modal">
+            <div class="modal-content links-modal-content">
+                <span class="modal-close-button">&times;</span>
+                <h2>All My Links</h2>
+                <p>Hier findest du all meine Projekte auf einen Blick.</p>
+                <div class="links-grid">
+                    <a class="link-button" href="https://see-sg.de" target="_blank" rel="noopener noreferrer">SEEsg</a>
+                    <a class="link-button" href="https://github.com/seecoding" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    <a class="link-button" href="https://erniez28.de" target="_blank" rel="noopener noreferrer">Erniez–Blog</a>
+                    <a class="link-button" href="https://otn.see-sg.de" target="_blank" rel="noopener noreferrer">One-Time-Note</a>
+                    <a class="link-button" href="https://crazyprints.de" target="_blank" rel="noopener noreferrer">CrazyPrints</a>
+                    <a class="link-button" href="https://aintlikeyouclothing.com" target="_blank" rel="noopener noreferrer">AintLikeYouClothing</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
